@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Contact Details</title>
+  </head>
+  <body>
+    <h1>My Contact Details</h1>
+    <ol>
+      <li>My email address is zmvawda@gmail.com</li>
+      <li>My Cell number is +27 83 555 555</li>
+    </ol>
+    <hr>
+    <form enctype="text/plain" action="mailto:zmvawda@gmail.com" method="post"><!-- this was modified. Action changed from index.html, class was deleted , method was changed, post transfers everything from the form into the method, new attribute was added called enctype - enctype chages the encoding type ie plain text or unicode -->
+      <label>Your Name:</label>
+      <input type="text" name="Your Name" value=""><br><!-- name attribute was changed as this will be parsed to the email body before the user input was presented again in the email -->
+      <label>Your Email:</label>
+      <input type="email" name="Your Email" value=""><br>
+      <label>Your Message: </label>
+      <textarea name="name" rows="8" cols="30"></textarea><br> <!-- use this to make a large input text box -->
+      <input type="submit" name="Your Message" value="Submit"> <!-- you have a submit button to parse the form info as per the method. submit is the basic button the value attribute sepcifies the button text  -->
+    </form>
+  </body>
+</html>
